@@ -1,6 +1,6 @@
 # What?
 
-Here is proposed skeleton `Yesod`
+Here is proposed skeleton for new `Yesod` project.
 
 # What is wrong with current skeleton
 
@@ -112,7 +112,23 @@ authenticateUser = ...
 
 like in usual handlers.
 
-Form parsing is also proposed to implement in `Helper`.
+Form parsing is also proposed to implement in `Helper`. Here is an
+example of how we can write `App`-indenedent forms:
+
+```haskell
+module Helper.Home where
+
+import Helper.Import
+
+import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3,
+                              withSmallInput)
+
+
+sampleForm :: Form app (FileInfo, Text)
+sampleForm = renderBootstrap3 BootstrapBasicForm $ (,)
+    <$> fileAFormReq "Choose a file"
+    <*> areq textField (withSmallInput "What's on the file?") Nothing
+```
 
 ### Pros
 
