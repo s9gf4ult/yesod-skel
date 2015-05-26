@@ -133,13 +133,15 @@ sampleForm = renderBootstrap3 BootstrapBasicForm $ (,)
 ### Pros
 
 * All site logic is unbound from `App` so it is portable from the
-  begining.
+  begining. It can be moved to subsite and/or different package.
 
 * `Foundation` has access to internal site logic like authentication
   and authorization which is required by `Yesod App` and `YesodAuth
-  App` instances (and maybe something else)
+  App` instances (and maybe something else).
 
-* Handlers are minimalistic, they are simple to modify and understand.
+* Handlers are minimalistic, they are simple to modify and
+  understand. They contain just logic of page rendering and
+  redirecting.
 
 ### Cons
 
