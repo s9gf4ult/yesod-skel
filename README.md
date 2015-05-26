@@ -152,7 +152,7 @@ sampleForm = renderBootstrap3 BootstrapBasicForm $ (,)
 
 * Project structure becomes more complex.
 
-## Minimalize code in Handler
+## Minimize code in Handler
 
 While all logic is moved to `Helper` namespace handlers become
 minimalistic. This is a consequence of preceeding paragraph.
@@ -161,7 +161,7 @@ minimalistic. This is a consequence of preceeding paragraph.
 
 No comments.
 
-## Beutify cabal file
+## Beautify cabal file
 
 Add separating coma to module lists, sort module lists, sort
 dependency lists, sort extensions list, normalize indenting, remove
