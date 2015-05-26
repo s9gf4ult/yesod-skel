@@ -1,7 +1,7 @@
 module Helper.Import
        ( module Import
        , HasSettings(..)
-       , HandlerMonad
+       , Handler
        , Form
        ) where
 
@@ -15,7 +15,7 @@ import Yesod.Default.Config2 as Import
 class HasSettings a where
     getSettings :: a -> AppSettings
 
-type HandlerMonad m =
+type Handler m =
     ( MonadHandler m
     , HasSettings (HandlerSite m)
     )
