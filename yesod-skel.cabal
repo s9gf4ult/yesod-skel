@@ -17,7 +17,7 @@ library
                    , Foundation
                    , Handler.Common
                    , Handler.Home
-                   , Import
+                   , Handler.Import
                    , Settings
                    , Settings.StaticFiles
 
