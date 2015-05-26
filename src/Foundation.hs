@@ -1,6 +1,7 @@
 module Foundation where
 
 import ClassyPrelude.Yesod
+import Helper.Import
 import Settings
 import Settings.StaticFiles
 import Text.Hamlet          (hamletFile)
@@ -22,6 +23,9 @@ data App = App
 instance HasHttpManager App where
     getHttpManager = appHttpManager
 
+instance HasSettings App where
+    getSettings = appSettings
+
 -- This is where we define all of the routes in our application. For a full
 -- explanation of the syntax, please see:
 -- http://www.yesodweb.com/book/routing-and-handlers
@@ -31,8 +35,6 @@ instance HasHttpManager App where
 -- explanation for this split.
 mkYesodData "App" $(parseRoutesFile "config/routes")
 
--- | A convenient synonym for creating forms.
-type Form x = Html -> MForm (HandlerT App IO) (FormResult x, Widget)
 
 -- Please see the documentation for the Yesod typeclass. There are a number
 -- of settings which can be configured by overriding methods here.

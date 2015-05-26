@@ -18,6 +18,8 @@ library
                    , Handler.Common
                    , Handler.Home
                    , Handler.Import
+                   , Helper.Home
+                   , Helper.Import
                    , Settings
                    , Settings.StaticFiles
 
@@ -28,6 +30,7 @@ library
         ghc-options:   -Wall -fwarn-tabs -O2
 
     extensions: CPP
+              , ConstraintKinds
               , DeriveDataTypeable
               , EmptyDataDecls
               , FlexibleContexts
