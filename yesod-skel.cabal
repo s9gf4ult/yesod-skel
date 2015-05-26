@@ -41,6 +41,7 @@ library
               , NoMonomorphismRestriction
               , OverloadedStrings
               , QuasiQuotes
+              , RankNTypes
               , RecordWildCards
               , TemplateHaskell
               , TupleSections

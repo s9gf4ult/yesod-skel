@@ -1,4 +1,9 @@
-module Helper.Import where
+module Helper.Import
+       ( module Import
+       , HasSettings(..)
+       , HandlerMonad
+       , Form
+       ) where
 
 import ClassyPrelude.Yesod   as Import
 
@@ -16,4 +21,6 @@ type HandlerMonad m =
     )
 
 -- | A convenient synonym for creating forms.
-type Form app x = Html -> MForm (HandlerT app IO) (FormResult x, Widget)
+type Form app x =
+    (RenderMessage app FormMessage)
+    => Html -> MForm (HandlerT app IO) (FormResult x, WidgetT app IO ())
