@@ -12,6 +12,7 @@ Flag library-only
     Default:       False
 
 library
+    hs-source-dirs:  src
     exposed-modules: Application
                    , Foundation
                    , Handler.Common
@@ -82,7 +83,8 @@ executable         yesod-skel
 
     main-is:           main.hs
     hs-source-dirs:    app
-    build-depends:     base, yesod-skel
+    build-depends:     base
+                     , yesod-skel
 
     ghc-options:       -threaded -O2 -rtsopts -with-rtsopts=-N
 
