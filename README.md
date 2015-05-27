@@ -30,7 +30,7 @@ App.Handler -- Just reexports all handlers from `App.Route.{route path}.Handler`
 
 Here is picture of module dependencies:
 
-![Modules graph](https://raw.githubusercontent.com/s9gf4ult/yesod-skel/master/modules.svg)
+![Modules graph](https://github.com/s9gf4ult/yesod-skel/blob/master/modules.svg)
 
 ## Minimize code in Handler
 
