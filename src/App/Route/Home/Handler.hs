@@ -1,4 +1,4 @@
-module Handler.Home where
+module App.Route.Home.Handler where
 
 import Handler.Import
 import Helper.Home
