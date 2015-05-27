@@ -1,4 +1,4 @@
-module Helper.Import
+module App.NoFoundationImport
        ( module Import
        , HasSettings(..)
        , Handler

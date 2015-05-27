@@ -1,4 +1,4 @@
-module Handler.Import
+module App.FoundationImport
     ( module Import
     ) where
 
