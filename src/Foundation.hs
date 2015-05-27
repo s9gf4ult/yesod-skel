@@ -1,9 +1,6 @@
 module Foundation where
 
-import ClassyPrelude.Yesod
-import Helper.Import
-import Settings
-import Settings.StaticFiles
+import App.NoFoundationImport
 import Text.Hamlet          (hamletFile)
 import Text.Jasmine         (minifym)
 import Yesod.Core.Types     (Logger)

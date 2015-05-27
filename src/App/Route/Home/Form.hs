@@ -1,6 +1,6 @@
 module App.Route.Home.Form where
 
-import Helper.Import
+import App.NoFoundationImport
 
 import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3,
                               withSmallInput)

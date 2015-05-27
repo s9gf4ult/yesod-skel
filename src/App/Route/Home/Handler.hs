@@ -1,7 +1,8 @@
 module App.Route.Home.Handler where
 
-import Handler.Import
-import Helper.Home
+import App.FoundationImport
+
+import App.Route.Home.Form
 
 -- This is a handler function for the GET request method on the HomeR
 -- resource pattern. All of your resource patterns are defined in

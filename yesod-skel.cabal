@@ -15,13 +15,14 @@ Flag library-only
 
 library
     hs-source-dirs:  src
-    exposed-modules: Application
+    exposed-modules: App.FoundationImport
+                   , App.Handler
+                   , App.NoFoundationImport
+                   , App.Route.Common.Handler
+                   , App.Route.Home.Form
+                   , App.Route.Home.Handler
+                   , Application
                    , Foundation
-                   , Handler.Common
-                   , Handler.Home
-                   , Handler.Import
-                   , Helper.Home
-                   , Helper.Import
                    , Settings
                    , Settings.StaticFiles
 
