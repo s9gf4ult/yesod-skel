@@ -1,7 +1,8 @@
 -- | Common handler functions.
-module Handler.Common where
+module App.Route.Common.Handler where
 
-import Handler.Import
+import App.FoundationImport
+
 import Data.FileEmbed (embedFile)
 
 -- These handlers embed files in the executable at compile time to avoid a
